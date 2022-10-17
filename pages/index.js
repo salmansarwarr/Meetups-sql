@@ -42,7 +42,7 @@ export async function getStaticProps() {
                 image: meetup.image,
                 address: meetup.address,
                 id: meetup._id.toString()
-            }))
+            })),
         },
         revalidate: 1
     }

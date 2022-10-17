@@ -10,6 +10,21 @@ function MeetupItem(props) {
         router.push(`/${props.id}`)
     }
 
+    async function deleteHandler(id) {
+        const response = await fetch('/api/delete-meetup', {
+            method: 'POST',
+            body: JSON.stringify(id),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+
+        const data = await response.json()
+        console.log(data);
+
+        router.push('/');
+    }
+
     return (
         <li className={classes.item}>
             <Card>
@@ -22,6 +37,9 @@ function MeetupItem(props) {
                 </div>
                 <div className={classes.actions}>
                     <button onClick={showDetailHander}>Show Details</button>
+                </div>
+                <div className={classes.actions} style={{paddingTop: 0}}>
+                    <button onClick={() => deleteHandler(props.id)}>Delete</button>
                 </div>
             </Card>
         </li>

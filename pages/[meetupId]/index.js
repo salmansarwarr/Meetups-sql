@@ -1,6 +1,6 @@
 import { MongoClient, ObjectId } from "mongodb"
 import Head from "next/head";
-import React from "react";
+import { useState } from "react";
 import MeetupDetails from "../../Components/meetups/MeetupDetail";
 
 function MeetupDetailsPage(props) {
@@ -11,6 +11,7 @@ function MeetupDetailsPage(props) {
                 <meta name="description" content={props.description}/>
             </Head>
             <MeetupDetails
+                id={props.id}
                 image={props.image}
                 title={props.title}
                 address={props.address}
