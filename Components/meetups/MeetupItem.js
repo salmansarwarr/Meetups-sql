@@ -7,7 +7,7 @@ function MeetupItem(props) {
     const router = useRouter()
 
     function showDetailHander() {
-        router.push(`/${props.id}`)
+        router.push(`/${props.id}`);
     }
 
     async function deleteHandler(id) {

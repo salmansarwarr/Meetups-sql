@@ -90,7 +90,7 @@ export default function FormDialog({ handleClose, open, meetup, setMeetup, setOp
                         ></textarea>
                     </div>
                     <div className={classes.actions}>
-                        <button>Add Meetup</button>
+                        <button>Edit Meetup</button>
                     </div>
                 </form>
             </Card>
