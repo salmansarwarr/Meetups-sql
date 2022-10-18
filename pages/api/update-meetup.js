@@ -19,7 +19,6 @@ async function handler(req, res) {
         const result = await meetupsCollections.updateOne({_id: ObjectId(req.body._id)}, {$set: toUpdate})
         console.log(result);
         
-
         client.close();
 
         res.status(201).json({message: 'meetups updated'})

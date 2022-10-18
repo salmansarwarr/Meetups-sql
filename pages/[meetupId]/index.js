@@ -1,6 +1,5 @@
 import { MongoClient, ObjectId } from "mongodb"
 import Head from "next/head";
-import { useState } from "react";
 import MeetupDetails from "../../Components/meetups/MeetupDetail";
 
 function MeetupDetailsPage(props) {
