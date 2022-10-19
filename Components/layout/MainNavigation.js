@@ -9,10 +9,10 @@ function MainNavigation() {
             </div>
             <nav>
                 <ul>
-                    <li>
+                    <li className={classes.allNew}>
                         <Link href="/">All Meetups</Link>
                     </li>
-                    <li>
+                    <li className={classes.addNew}>
                         <Link href="/new-meetup">Add New Meetup</Link>
                     </li>
                 </ul>

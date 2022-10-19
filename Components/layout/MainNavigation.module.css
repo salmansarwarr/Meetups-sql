@@ -3,7 +3,7 @@
     height: 5rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; 
     background-color: #77002e;
     padding: 0 10%;
 }
@@ -36,4 +36,16 @@
 .header a:active,
 .header a.active {
     color: white;
+}
+
+@media (max-width: 440px) {
+    .allNew {
+        display: none;
+    }
+    .logo {
+        font-size: 100%;
+    }
+    .header .addNew a {
+        font-size: 100%;
+    }
 }
