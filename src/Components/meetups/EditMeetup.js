@@ -37,7 +37,7 @@ export default function FormDialog({ handleClose, open, meetup, setMeetup, setOp
         })
 
         const data = await response.json()
-        router.push(`/${meetup._id}`);
+        router.push(`/`);
         setOpen(false)
     }
     
